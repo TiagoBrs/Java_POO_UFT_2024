@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java_POO_UFT_2024.iml" filepath="$PROJECT_DIR$/.idea/Java_POO_UFT_2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Matrizes/Matrizes.iml" filepath="$PROJECT_DIR$/Matrizes/Matrizes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/equimapento.resolucao/equimapento.resolucao.iml" filepath="$PROJECT_DIR$/equimapento.resolucao/equimapento.resolucao.iml" />
+    </modules>
+  </component>
+</project>
