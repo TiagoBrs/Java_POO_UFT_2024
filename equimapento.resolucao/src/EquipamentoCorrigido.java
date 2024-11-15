@@ -37,6 +37,7 @@ public class EquipamentoCorrigido extends Equipamento{
             mesEquipamentos[i]++;
             if(mesEquipamentos[i]>12){
                 mesEquipamentos[i] = mesEquipamentos[i] % 12;
+                if(mesEquipamentos[i] == 0) mesEquipamentos[i]++;
             }
         }
     }
