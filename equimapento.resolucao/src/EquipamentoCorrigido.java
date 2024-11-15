@@ -1,7 +1,10 @@
 public class EquipamentoCorrigido extends Equipamento{
+
     private static int mesCorrente;
 
     private int[] mesEquipamentos = new int[super.numeroEquipamentos];
+    private static final String[] stringMeses = {"", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
+    "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
 
     public EquipamentoCorrigido(int mesCorrente, int numeroEquipamento) {
         super(numeroEquipamento);
@@ -9,8 +12,8 @@ public class EquipamentoCorrigido extends Equipamento{
         atualizarMes();
     }
 
-    public int getMesCompra(int numeroEquipamento) {
-        return mesEquipamentos[numeroEquipamento];
+    public String getMesCompra(int numeroEquipamento) {
+        return stringMeses[mesEquipamentos[numeroEquipamento]];
     }
 
     public void setMesCompra(int numeroEquipamento, int mesCompra) {
@@ -42,7 +45,7 @@ public class EquipamentoCorrigido extends Equipamento{
         if(equipamento.getNumeroEquipamentos() == this.numeroEquipamentos){
             for(int i = 0; i < super.numeroEquipamentos; i++){
                 this.setValor(i, equipamento.getValor(i));
-                this.setMesCompra(i, equipamento.getMesCompra(i));
+                this.setMesCompra(i, equipamento.mesEquipamentos[i]);
             }
         }
     }

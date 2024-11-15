@@ -38,8 +38,9 @@ public class Equipamento_APP {
         //Substituição
 
         equipamentos.substitui(novosEquipamentos);
+
         for(int i=0; i< equipamentos.getNumeroEquipamentos(); i++){
-            System.out.printf("Mes = %d --- Equipamento %d: valor = %d%n",equipamentos.getMesCompra(i), i, equipamentos.getValor(i));
+            System.out.printf("Mes = %s --- Equipamento %d: valor = %d%n", equipamentos.getMesCompra(i), i, equipamentos.getValor(i));
         }
     }
 }
