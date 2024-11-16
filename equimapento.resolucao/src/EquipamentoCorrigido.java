@@ -2,7 +2,7 @@ public class EquipamentoCorrigido extends Equipamento{
 
     private static int mesCorrente;
 
-    private int[] mesEquipamentos = new int[super.numeroEquipamentos];
+    private final int[] mesEquipamentos = new int[super.numeroEquipamentos];
     private static final String[] stringMeses = {"", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
     "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
 
@@ -18,6 +18,9 @@ public class EquipamentoCorrigido extends Equipamento{
         super(numeroEquipamento);
         this.mesCorrente = mesCorrente;
         atualizarMes();
+
+        //this.mesCorrente = this.getNumeroPeloMes(mesCorrente);
+
     }
 
     /***
@@ -91,4 +94,17 @@ public class EquipamentoCorrigido extends Equipamento{
             throw new TamanhosDiferentesException("O número de equipamentos devem ser iguais");
         }
     }
+
+    /*
+    private int getNumeroPeloMes(String mes){
+        for(int i=1; i<= 12; i++){
+            if(mes.contentEquals(stringMeses[i])){
+                return i;
+            }
+        }
+        return 0;
+    }
+     */
+
 }
+
